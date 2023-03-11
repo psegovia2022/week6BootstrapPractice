@@ -1,0 +1,39 @@
+#cover {
+    background: url('../images/bg.jpg') center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.fas, .fa, .far {
+    font-size: 3em;
+    color: #15aabf;
+}
+
+footer .fas {
+    font-size: 1em;
+}
+
+footer .social .fab {
+    font-size: 2em;
+}
+.carousel-item img {
+    width: 100%;
+}
+
+.carousel-caption {
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    left: inherit;
+    right: inherit;
+}
+
+.carousel-indicators {
+    padding-bottom: 1rem;;
+}
+
+.form-check-input:checked {
+    background-color: #0dcaf0;
+}

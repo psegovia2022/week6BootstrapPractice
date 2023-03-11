@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap example 10 | page layout</title>
+
+    <!-- font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <header id="cover" class="bg-light">
+        <div class="container p-4">
+            <div class="row align-items-center">
+                <article class="col-lg-6 order-2">
+                    <h1 class="display-4"> Sea creatures</h1>
+                    <h2>The ocean is worth saving, make a difference today</h2>
+                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, dignissimos saepe molestiae sequi beatae nihil ducimus blanditiis. Libero error iusto aspernatur culpa! Corrupti beatae, voluptatibus itaque architecto adipisci consequuntur non?</p>
+                        <p>
+                            <a href="#" class="btn btn-light me-2">Discover more</a>
+                            <a href="#" class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#joinSignup" aria-controls="offcanvasSignup">Join us</a>
+                        </p>
+                        <p><a href="#" class="btn btn-outline-light btn-sm">&darr;</a></p>
+                    
+                </article>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img src="images/o3.jpg" alt="sea turtle" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </header>
+    
+<!-- off canvas signup section -->
+
+<section class="offcanvas offcanvas-start" aria-labelledby="joinLabel" id="joinSignup">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="joinLabel"> Join us for an adventure of a lifetime!</h5>
+        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>Lorem ipsum dolor sit, amet coa at laboriosam facere dolores mollitia eum fugiat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, provident. Itaque vel sit voluptquaerat iusto minima, sapiente nesciunt et eum enim!</p>
+        <form action="" class="mb-2">
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="joinName">
+                <label for="joinName">Enter your full name:</label>
+            </div>
+
+            <div class="form-floating mb-2">
+                <input type="email" class="form-control" id="joinEmail">
+                <label for="joinEmail">Email:</label>
+            </div>
+
+            <div class="form-floating mb-2">
+                <input type="tel" class="form-control" id="joinPhone">
+                <label for="joinPhone">Enter your phine number:</label>
+            </div>
+            <button class="btn btn-info text-light" type="submit">Join us for a trip!</button>
+        </form>
+    </div>
+</section>
+
+<!-- this is my navigation -->
+
+<nav id="navMain" class="navbar navbar-dark bg-dark shadow navbar-expand-md sticky-top ps-2 pe-2">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand text-info fas fa-fish"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto"> 
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About is</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Volunteer</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Testimonials</a></li>
+            </ul>
+            <div class="navbar-text mx-lg-3">
+                <a href="#" class="btn btn-info text-white shadow">Sign up</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Programs -->
+
+<section id="programs">
+    <div class="container my-4">
+        <h2>Our Programs</h2>
+        <p class="text-muted mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolor aperiam quia sit! Expedita hic corrupti veritatis quis? Sint iure corrupti aut expedita, nisi itaque hic ipsa unde asperiores cumque!</p>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <i class="far fa-dot-circle"></i>
+                <h6>Lorem ipsum dolor  dolorum minus.</h6>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse deserunt perferendis quibusdam voluptatum. Laborum sapiente quod aut molestiae ea? Nam at illo architecto animi quod facilis, officia doloribus numquam?</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <i class="far fa-moon"></i>
+                <h6>Lorem ipsumcaecati dolorum minus.</h6>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse deserunt perferendis quibusdam voluptatum. Laborum sapiente quod aut molestiae ea? Nam at illo architecto animi quod facilis, officia doloribus numquam?</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <i class="fa fa-water"></i>
+                <h6>Lorem ipsuperiam temporarum minus.</h6>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse deserunt perferendis quibusdam voluptatum. Laborum sapiente quod aut molestiae ea? Nam at illo architecto animi quod facilis, officia doloribus numquam?</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <i class="far fa-heart"></i>
+                <h6>Lorem ipsum dolor sit amet m minus.</h6>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse deserunt perferendis quibusdam voluptatum. Laborum sapiente quod aut molestiae ea? Nam at illo architecto animi quod facilis, officia doloribus numquam?</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <i class="fa fa-infinity"></i>
+                <h6>Lorem ora facilis veniam omnis commodi dolore obcaecati dolorum minus.</h6>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse deserunt perferendis quibusdam voluptatum. Laborum sapiente quod aut molestiae ea? Nam at illo architecto animi quod facilis, officia doloribus numquam?</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <i class="far fa-dot-circle"></i>
+                <h6>Lorem ipsum aecati dolorum minus.</h6>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse deserunt perferendis quibusdam voluptatum. Laborum sapiente quod aut molestiae ea? Nam at illo architecto animi quod facilis, officia doloribus numquam?</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Carousel -->
+
+<section id="carousel">
+    <div class="carousel slide" id="slider1">
+        <ol class="carousel-indicators list-unstyled">
+            <li>
+                <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" aria-label="slide 1" aria-current="true" class="active"></button>
+            </li>
+            <li>
+                <button type="button" data-bs-target="#slider1" data-bs-slide-to="1" aria-label="slide 2"></button>
+            </li>
+            <li>
+                <button type="button" data-bs-target="#slider1" data-bs-slide-to="2" aria-label="slide 3"></button>
+            </li>
+        </ol>
+
+        <div class="carousel-inner">
+            <figure class="carousel-item active">
+                <img src="images/o1.jpg" alt="sea life 1">
+                <figcaption class="carousel-caption d-none d-md-block">
+                    <h5>Image 1 heading</h5>
+                    <p>Lorem ipsiciatis obcaecati nostrum, minus nisi quia fuga.</p>
+                </figcaption>
+            </figure>
+            <figure class="carousel-item">
+                <img src="images/o2.jpg" alt="sea life 2">
+                <figcaption class="carousel-caption d-none d-md-block">
+                    <h5>Image 2 heading</h5>
+                    <p>Magnam, tempora, drro hic laborum accusantium aut? Voluptates rem beatae totam, itaque esse expedita.</p>
+                </figcaption>
+            </figure>
+            <figure class="carousel-item">
+                <img src="images/o3.jpg" alt="sea life 3">
+                <figcaption class="carousel-caption d-none d-md-block">
+                    <h5>Image 3 heading</h5>
+                    <p>Error omnis, soluta temod incidunt enim voluptatem a vel.</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <a href="#" class="carousel-control-prev" role="button" data-bs-target="#slider1" data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        
+        <a href="#" class="carousel-control-next" role="button" data-bs-target="#slider1" data-bs-slide="next">
+
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+</section>
+
+
+
+<!-- Cards  -->
+
+<section id="animals" class="bg-light">
+    <div class="container">
+        <h2 class="display-6"> Animals we are helping
+        </h2>
+        <p class="lead text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nulla iure nam, minus mollitia eaque obcaecati saepe dolor quidem maiores ex cum qui ea soluta modi omnis. Libero, dolor nisi.</p>
+
+        <div class="row g-4 px-4">
+            <div class="col-md-6 col-lg-4">
+                <article class="card shadow mb-4 h-100">
+                    <img src="images/o1.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Animal title 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error rati one ullam modi sequi reprehenderit deserunt facilis laudantium harum natus necessitatibus dolores, incidunt doloribus consequuntur nam enim molestiae eos rerum?</p>
+                        <a href="#" class="btn btn-info text-light">Read more</a>
+                    </div>
+    
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <article class="card shadow mb-4 h-100">
+                    <img src="images/o4.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Animal title 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error rati one ullam modi sequi reprehenderit deserunt facilis laudantium harum natus necessitatibus dolores, incidunt doloribus consequuntur nam enim molestiae eos rerum?</p>
+                        <a href="#" class="btn btn-info text-light">Read more</a>
+                    </div>
+    
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <article class="card shadow mb-4 h-100">
+                    <img src="images/o2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Animal title 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error rati one ullam modi sequi reprehenderit deserunt facilis laudantium harum natus necessitatibus dolores, incidunt doloribus consequuntur nam enim molestiae eos rerum?</p>
+                        <a href="#" class="btn btn-info text-light">Read more</a>
+                    </div>
+    
+                </article>
+            </div>
+
+           
+            <div class="col-md-6 col-lg-4">
+                <article class="card shadow mb-4 h-100">
+                    <img src="images/o2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Animal title 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error rati one ullam modi sequi reprehenderit deserunt facilis laudantium harum natus necessitatibus dolores, incidunt doloribus consequuntur nam enim molestiae eos rerum?</p>
+                        <a href="#" class="btn btn-info text-light">Read more</a>
+                    </div>
+    
+                </article>
+            </div>
+
+            
+
+            <div class="col-md-6 col-lg-4">
+                <article class="card shadow mb-4 h-100">
+                    <img src="images/o2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Animal title 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error rati one ullam modi sequi reprehenderit deserunt facilis laudantium harum natus necessitatibus dolores, incidunt doloribus consequuntur nam enim molestiae eos rerum?</p>
+                        <a href="#" class="btn btn-info text-light">Read more</a>
+                    </div>
+    
+                </article>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <article class="card shadow mb-4 h-100">
+                    <img src="images/o2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Animal title 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error rati one ullam modi sequi reprehenderit deserunt facilis laudantium harum natus necessitatibus dolores, incidunt doloribus consequuntur nam enim molestiae eos rerum?</p>
+                        <a href="#" class="btn btn-info text-light">Read more</a>
+                    </div>
+    
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- quote -->
+
+<section id="quote" class="bg-info text-light p-2 my-5">
+    <div class="container my-4">
+        <blockquote class="blockquote text-center mb-0">
+            <i class="fas fa-heart text-light"></i>
+            <p class="mb-2"> There is no place like the sea</p>
+            <footer class="blockquote-footer text-light">
+                Someone famous in <cite title="Source title"> Source title</cite>
+            </footer>
+        </blockquote>
+    </div>
+</section>
+
+
+<!-- Form -->
+
+<section id="form">
+    <div class="container">
+        <h2 class="display-6">Get in touch </h2>
+        <form action="" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6 mb-3">
+                <label for="fName" class="form-label mb-0">First Name</label>
+                <input type="text" class="form-control" id="fName" required>
+                <div class="valid-feedback">That looks great!</div>
+                <div class="invalid-feedback">Please enter your first name</div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label for="lName" class="form-label mb-0">Last Name</label>
+                <input type="text" class="form-control" id="lName" required>
+                <div class="valid-feedback">That looks great!</div>
+                <div class="invalid-feedback">Please enter your last name</div>
+            </div>
+
+            <div class="col-md-8 mb-3">
+                <label for="email" class="form-label mb-0">Email</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="valid-feedback">That looks great!</div>
+                <div class="invalid-feedback">Please enter your a valid email</div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <label for="phone" class="form-label mb-0">Phone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="123-456-7890" required>
+                <div class="valid-feedback">That looks great!</div>
+                <div class="invalid-feedback">Please enter your phone number in this format: 123-456-7890</div>
+            </div>
+
+            <div class="col-md-12 mb-3">
+                <label for="comment" class="form-label mb-0">Comments</label>
+                <textarea name="comments" id="comments" rows="4" class="form-control" required></textarea>
+                <div class="valid-feedback">That looks great!</div>
+                <div class="invalid-feedback">Please enter your message</div>
+            </div>
+
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input me-2" id="newsletter" checked>
+                <label for="newsletter" class="form-check-label">Subscribe to our newsletter</label>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <button class="btn btn-info text-light" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- footer -->
+
+<footer class="bg-dark text-light">
+    <div class="container mt-4 p-4">
+        <section class="row d-flex align-items-center">
+            <article class="col-md-4 ps-6">
+                <h6 class="text-uppercase mb-2">Contact</h6>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-envelope me-3"></i>San Diego, California</li>
+                    <li><i class="fas fa-home me-3"></i>info@sealives.com</li>
+                    <li><i class="fas fa-phone me-3"></i>619-421-8639</li>
+                    <li><i class="fas fa-print me-3"></i>619-421-8639</li>
+                </ul>
+            </article>
+
+            <article class="col-md-4">
+                <h6 class="text-uppercase mb-2">Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Link 1</a></li>
+                    <li><a href="#" class="text-light">Link 2</a></li>
+                    <li><a href="#" class="text-light">Link 3</a></li>
+                    <li><a href="#" class="text-light">Link 4</a></li>
+                </ul>
+            </article>
+
+            <article class="col-md-4 ps-6">
+                <h6 class="text-uppercase mb-2">Sea Lives</h6>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae esse, vitae q maiores facere dolorem assumenda porro placeat enim.</p>
+            </article>
+            <hr>
+
+            <section class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    &copy; Copyright 2023 | Sea Lives
+                </div>
+
+                <div class="col-md-6 text-md-end social">
+                    <a href="#" class="btn m-1 text-info">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                        
+                    <a href="#" class="btn m-1 text-info">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    
+                    <a href="#" class="btn m-1 text-info">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    
+                    <a href="#" class="btn m-1 text-info">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    
+                
+                </div>
+
+            </section>
+        </section>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script>
+        (() => {
+            'use strict'
+
+            const forms = document.querySelectorAll('.needs-validation')
+
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+
+    </script>
+</body>
+</html>
